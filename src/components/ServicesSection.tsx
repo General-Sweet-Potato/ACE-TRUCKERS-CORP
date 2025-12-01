@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Truck, Package, Warehouse, Route } from "lucide-react"; // Removed CardContent, CardDescription, CardTitle imports
+import { Truck, Package, Warehouse, Route } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -15,11 +15,7 @@ const ServicesSection = () => {
       title: "Cargo Handling",
       description: "Expert handling and secure management of all types of cargo.",
     },
-    {
-      icon: <Warehouse className="h-10 w-10 text-blue-600 mb-4" />,
-      title: "Warehousing Solutions",
-      description: "Flexible and secure storage options for your inventory.",
-    },
+    // Removed Warehousing Solutions
     {
       icon: <Route className="h-10 w-10 text-blue-600 mb-4" />,
       title: "Route Optimization",
@@ -41,10 +37,10 @@ const ServicesSection = () => {
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service, index) => (
-              <div key={index} className="flex flex-col items-center p-6 text-center"> {/* Removed card-specific styling */}
+              <div key={index} className="flex flex-col items-center p-6 text-center">
                 {service.icon}
-                <h3 className="mb-2 text-primary text-lg font-semibold">{service.title}</h3> {/* Replaced CardTitle with h3 */}
-                <p className="text-muted-foreground">{service.description}</p> {/* Replaced CardDescription with p, removed CardContent */}
+                <h3 className="mb-2 text-primary text-lg font-semibold">{service.title}</h3>
+                <p className="text-muted-foreground">{service.description}</p>
               </div>
             ))}
           </div>
