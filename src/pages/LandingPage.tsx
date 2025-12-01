@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Rocket, Zap, Shield, CheckCircle2 } from "lucide-react";
-import Navbar from "@/components/Navbar"; // Import the new Navbar component
+import Navbar from "@/components/Navbar";
+import ServicesSection from "@/components/ServicesSection"; // Import the new ServicesSection component
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navbar /> {/* Render the Navbar component */}
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-blue-600 to-blue-800 text-white flex items-center justify-center">
@@ -79,6 +80,8 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      <ServicesSection /> {/* Render the new ServicesSection component */}
 
       {/* Call to Action Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
