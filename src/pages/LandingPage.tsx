@@ -2,28 +2,31 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Rocket, Zap, Shield, CheckCircle2 } from "lucide-react";
+import Navbar from "@/components/Navbar"; // Import the new Navbar component
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Navbar /> {/* Render the Navbar component */}
+
       {/* Hero Section */}
-      <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-primary to-blue-600 text-primary-foreground flex items-center justify-center">
+      <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-blue-600 to-blue-800 text-white flex items-center justify-center">
         <div className="container px-4 md:px-6 text-center">
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-4xl mx-auto space-y-6">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
-              Launch Your Ideas with Dyad
+              ACE TRUCKERS CORP
             </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90">
-              The ultimate platform for building and deploying web applications with ease and speed.
+            <p className="text-lg md:text-xl lg:text-2xl text-white/90">
+              A fast-growing logistics company offering transport solutions to over 60 known clients locally in the Philippines, aiming to be one of the best.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                Get Started
+              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                Get a Quote
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 Learn More
               </Button>
             </div>
@@ -32,37 +35,44 @@ const LandingPage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-muted">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-8 text-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Powerful Features for Your Success
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                Why Choose ACE TRUCKERS CORP?
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                Dyad provides a comprehensive suite of tools to help you build, deploy, and scale your applications.
+                We are committed to providing reliable, efficient, and secure logistics services.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="flex flex-col items-center p-6 text-center">
-                <Rocket className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="mb-2">Rapid Development</CardTitle>
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+                <Rocket className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
-                  Build and iterate quickly with our intuitive tools and real-time preview.
+                  Ensuring your goods reach their destination on time, every time.
                 </CardDescription>
               </Card>
-              <Card className="flex flex-col items-center p-6 text-center">
-                <Zap className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="mb-2">Blazing Fast Deployment</CardTitle>
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+                <Zap className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
-                  Deploy your applications instantly with optimized performance.
+                  Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
-              <Card className="flex flex-col items-center p-6 text-center">
-                <Shield className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="mb-2">Secure & Scalable</CardTitle>
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+                <Shield className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
-                  Ensure your applications are secure and can scale to meet demand.
+                  Your cargo is safe with us, handled with utmost care and security.
+                </CardDescription>
+              </Card>
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+                <CheckCircle2 className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
+                <CardDescription>
+                  Proudly serving over 60 known clients across the Philippines.
                 </CardDescription>
               </Card>
             </div>
@@ -74,16 +84,16 @@ const LandingPage = () => {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Ready to Get Started?
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+              Partner with the Best in Logistics
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Join thousands of developers building amazing things with Dyad. Sign up for our newsletter to stay updated!
+              Experience seamless transport solutions tailored to your needs. Get a free quote today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Input type="email" placeholder="Enter your email" className="max-w-sm flex-1" />
-              <Button type="submit" className="bg-primary hover:bg-primary/90">
-                Subscribe
+              <Input type="email" placeholder="Enter your email for a quote" className="max-w-sm flex-1" />
+              <Button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white">
+                Request Quote
               </Button>
             </div>
           </div>
@@ -91,8 +101,8 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-muted text-muted-foreground text-center">
-        <p className="text-sm">&copy; 2024 Dyad. All rights reserved.</p>
+      <footer className="py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-blue-600 text-white text-center">
+        <p className="text-sm">&copy; 2024 ACE TRUCKERS CORP. All rights reserved.</p>
       </footer>
     </div>
   );
