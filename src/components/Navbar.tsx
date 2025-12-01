@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import atcSquareLogo from "/public/atc-square-logo.png"; // Import the logo image directly
 
 const Navbar = () => {
   const isMobile = useIsMobile();
@@ -31,7 +32,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-blue-700 text-white shadow-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/atc-square-logo.png" alt="ACE TRUCKERS CORP Logo" className="block h-10 w-auto object-contain" />
+          <img src={atcSquareLogo} alt="ACE TRUCKERS CORP Logo" className="block h-10 w-auto object-contain" />
           <span className="sr-only">ACE TRUCKERS CORP</span>
         </Link>
         {isMobile ? (
@@ -44,7 +45,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="flex flex-col bg-blue-700 text-white">
               <Link to="/" className="flex items-center gap-2 p-4">
-                <img src="/atc-square-logo.png" alt="ACE TRUCKERS CORP Logo" className="block h-10 w-auto object-contain" />
+                <img src={atcSquareLogo} alt="ACE TRUCKERS CORP Logo" className="block h-10 w-auto object-contain" />
                 <span className="text-xl font-bold">ACE TRUCKERS CORP</span>
               </Link>
               <nav className="grid gap-4 p-4">
