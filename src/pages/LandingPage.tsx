@@ -50,28 +50,28 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-red-500"> {/* Added bg-red-500 */}
                 <img src="/delivery-driver.png" alt="Fast & Reliable Delivery" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
                   Ensuring your goods reach their destination on time, every time.
                 </CardDescription>
               </Card>
-              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-red-500"> {/* Added bg-red-500 */}
                 <img src="/delivery-driver.png" alt="Efficient Operations" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
                   Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
-              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-red-500"> {/* Added bg-red-500 */}
                 <img src="/delivery-driver.png" alt="Secure Transport" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
                   Your cargo is safe with us, handled with utmost care and security.
                 </CardDescription>
               </Card>
-              <Card className="flex flex-col items-center p-6 text-center shadow-lg">
+              <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-red-500"> {/* Added bg-red-500 */}
                 <img src="/delivery-driver.png" alt="Trusted by Clients" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
                 <CardDescription>
