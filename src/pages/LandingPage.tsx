@@ -51,7 +51,7 @@ const LandingPage = () => {
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <img src="https://via.placeholder.com/100x100?text=Delivery" alt="Fast & Reliable Delivery" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/delivery-driver.png" alt="Fast & Reliable Delivery" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
                   Ensuring your goods reach their destination on time, every time.
