@@ -37,6 +37,13 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Test Image for Debugging */}
+      <div className="p-8 bg-yellow-200 border-8 border-purple-700 text-center">
+        <h3 className="text-2xl font-bold mb-4">DEBUG: Image Test Below</h3>
+        <img src="/placeholder.svg" alt="Test Placeholder" className="mx-auto h-64 w-64 object-contain border-4 border-green-500 bg-gray-300" />
+        <p className="mt-4 text-lg">If you see a gray square with a green border, the image is rendering!</p>
+      </div>
+
       {/* Features Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-muted">
         <div className="container px-4 md:px-6">
