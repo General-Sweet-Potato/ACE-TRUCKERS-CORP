@@ -27,7 +27,10 @@ const LandingPage = () => {
               <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                 Get a Quote
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button 
+                size="lg" 
+                className="bg-blue-500/20 border border-white text-white hover:bg-blue-500/40"
+              >
                 Learn More
               </Button>
             </div>
