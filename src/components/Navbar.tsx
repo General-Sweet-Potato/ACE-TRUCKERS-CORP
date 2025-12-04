@@ -1,15 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import atcSquareLogo from "/public/atc-square-logo.png"; // Import the logo image directly
+import ContactUsDialog from "@/components/ContactUsDialog"; // Import the new ContactUsDialog
 
 const Navbar = () => {
   const isMobile = useIsMobile();
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
+
+  const handleOpenContactDialog = () => setIsContactDialogOpen(true);
+  const handleCloseContactDialog = () => setIsContactDialogOpen(false);
 
   const navLinks = (
     <>
@@ -24,6 +29,9 @@ const Navbar = () => {
       </Link>
       <Button asChild className="bg-white text-blue-600 hover:bg-gray-100">
         <Link to="/get-quote">Get a Quote</Link>
+      </Button>
+      <Button onClick={handleOpenContactDialog} className="bg-white text-blue-600 hover:bg-gray-100">
+        Contact Us
       </Button>
     </>
   );
@@ -59,6 +67,7 @@ const Navbar = () => {
           </nav>
         )}
       </div>
+      <ContactUsDialog isOpen={isContactDialogOpen} onClose={handleCloseContactDialog} />
     </header>
   );
 };
