@@ -6,7 +6,6 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Input } from "@/components/ui/input";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection"; // Import the new ServicesSection component
-import placeholderSvg from "/public/placeholder.svg"; // Import the SVG directly
 
 const LandingPage = () => {
   return (
@@ -38,13 +37,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Test Image for Debugging */}
-      <div className="p-8 bg-yellow-200 border-8 border-purple-700 text-center">
-        <h3 className="text-2xl font-bold mb-4">DEBUG: Image Test Below</h3>
-        <img src={placeholderSvg} alt="Test Placeholder" className="mx-auto h-64 w-64 object-contain border-4 border-green-500 bg-gray-300" />
-        <p className="mt-4 text-lg">If you see a gray square with a green border, the image is rendering!</p>
-      </div>
-
       {/* Features Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-muted">
         <div className="container px-4 md:px-6">
@@ -59,28 +51,28 @@ const LandingPage = () => {
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src={placeholderSvg} alt="Fast & Reliable Delivery" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
+                <img src="/orientation.jpg" alt="Fast & Reliable Delivery" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
                 <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
                   Ensuring your goods reach their destination on time, every time.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src={placeholderSvg} alt="Efficient Operations" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
+                <img src="/orientation.jpg" alt="Efficient Operations" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
                 <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
                   Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src={placeholderSvg} alt="Secure Transport" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
+                <img src="/orientation.jpg" alt="Secure Transport" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
                 <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
                   Your cargo is safe with us, handled with utmost care and security.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src={placeholderSvg} alt="Trusted by Clients" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
+                <img src="/orientation.jpg" alt="Trusted by Clients" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" />
                 <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
                 <CardDescription>
                   Proudly serving over 60 known clients across the Philippines.
