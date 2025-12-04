@@ -4,7 +4,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Rocket, Zap, Shield, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection"; // Import the new ServicesSection component
 
@@ -52,28 +51,28 @@ const LandingPage = () => {
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <Rocket className="h-12 w-12 text-blue-600 mb-4" />
+                <img src="https://via.placeholder.com/100x100?text=Delivery" alt="Fast & Reliable Delivery" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
                   Ensuring your goods reach their destination on time, every time.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <Zap className="h-12 w-12 text-blue-600 mb-4" />
+                <img src="https://via.placeholder.com/100x100?text=Operations" alt="Efficient Operations" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
                   Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <Shield className="h-12 w-12 text-blue-600 mb-4" />
+                <img src="https://via.placeholder.com/100x100?text=Security" alt="Secure Transport" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
                   Your cargo is safe with us, handled with utmost care and security.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <CheckCircle2 className="h-12 w-12 text-blue-600 mb-4" />
+                <img src="https://via.placeholder.com/100x100?text=Clients" alt="Trusted by Clients" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
                 <CardDescription>
                   Proudly serving over 60 known clients across the Philippines.
