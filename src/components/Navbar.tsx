@@ -83,17 +83,11 @@ const Navbar = () => {
     }
   };
 
-  const filteredNavLinks = navigationItems.filter(item => {
-    if (item.is_public) return true;
-    if (session && userRole) {
-      return userRole === 'admin' || userRole === item.required_role;
-    }
-    return false;
-  });
-
+  // All navigation items from the database will now be displayed.
+  // The 'is_public' and 'required_role' properties will be used for content restriction on pages, not for navbar visibility.
   const renderNavLinks = (
     <>
-      {filteredNavLinks.map((item) => (
+      {navigationItems.map((item) => (
         <Link key={item.id} to={item.path} className="text-lg font-medium hover:text-blue-200 transition-colors">
           {item.name}
         </Link>
