@@ -51,28 +51,28 @@ const LandingPage = () => {
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src="/placeholder.svg" alt="Fast & Reliable Delivery" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Fast & Reliable Delivery" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" /> {/* Increased size and added border */}
                 <CardTitle className="mb-2 text-primary">Fast & Reliable Delivery</CardTitle>
                 <CardDescription>
                   Ensuring your goods reach their destination on time, every time.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src="/placeholder.svg" alt="Efficient Operations" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Efficient Operations" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" /> {/* Increased size and added border */}
                 <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
                   Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src="/placeholder.svg" alt="Secure Transport" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Secure Transport" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" /> {/* Increased size and added border */}
                 <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
                   Your cargo is safe with us, handled with utmost care and security.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg bg-white">
-                <img src="/placeholder.svg" alt="Trusted by Clients" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Trusted by Clients" className="h-48 w-48 object-cover rounded-full mb-4 border-4 border-red-500" /> {/* Increased size and added border */}
                 <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
                 <CardDescription>
                   Proudly serving over 60 known clients across the Philippines.
