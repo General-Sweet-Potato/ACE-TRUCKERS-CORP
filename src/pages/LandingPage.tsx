@@ -58,21 +58,21 @@ const LandingPage = () => {
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <img src="https://via.placeholder.com/100x100?text=Operations" alt="Efficient Operations" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Efficient Operations" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Efficient Operations</CardTitle>
                 <CardDescription>
                   Streamlined processes for maximum efficiency and cost-effectiveness.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <img src="https://via.placeholder.com/100x100?text=Security" alt="Secure Transport" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Secure Transport" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Secure Transport</CardTitle>
                 <CardDescription>
                   Your cargo is safe with us, handled with utmost care and security.
                 </CardDescription>
               </Card>
               <Card className="flex flex-col items-center p-6 text-center shadow-lg">
-                <img src="https://via.placeholder.com/100x100?text=Clients" alt="Trusted by Clients" className="h-24 w-24 object-cover rounded-full mb-4" />
+                <img src="/placeholder.svg" alt="Trusted by Clients" className="h-24 w-24 object-cover rounded-full mb-4" />
                 <CardTitle className="mb-2 text-primary">Trusted by Clients</CardTitle>
                 <CardDescription>
                   Proudly serving over 60 known clients across the Philippines.
